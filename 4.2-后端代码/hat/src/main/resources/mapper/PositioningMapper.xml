@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qrs.mapper.PositioningMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.qrs.pojo.Positioning">
+        <id column="id" property="id" />
+        <result column="equipment_id" property="equipment_id" />
+        <result column="lng" property="lng" />
+        <result column="lat" property="lat" />
+        <result column="update_time" property="update_time" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, equipment_id, equipment_lognitude, equipment_latitude, update_time, create_time
+    </sql>
+
+</mapper>

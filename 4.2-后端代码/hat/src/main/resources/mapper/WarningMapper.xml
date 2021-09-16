@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qrs.mapper.WarningMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.qrs.pojo.Warning">
+        <id column="id" property="id" />
+        <result column="warning_id" property="warning_id" />
+        <result column="user_name" property="user_name" />
+        <result column="warning_number" property="warning_number" />
+        <result column="warning_name" property="warning_name" />
+        <result column="warning_why" property="warning_why" />
+        <result column="warning_time" property="warning_time" />
+        <result column="shutdown_time" property="shutdown_time" />
+        <result column="update_time" property="update_time" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, warning_id, user_name,warning_number, warning_name, warning_why, warning_time, shutdown_time, update_time, create_time
+    </sql>
+
+
+
+</mapper>

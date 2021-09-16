@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qrs.mapper.FenceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.qrs.pojo.Fence">
+        <id column="id" property="id" />
+        <result column="fence_id" property="fence_id" />
+        <result column="fence_number" property="fence_number" />
+        <result column="fence_name" property="fence_name" />
+        <result column="fence_node" property="fence_node" />
+        <result column="update_time" property="update_time" />
+        <result column="create_time" property="create_time" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, fence_id, fence_number, fence_name, fence_node,  update_time, create_time
+    </sql>
+
+</mapper>
